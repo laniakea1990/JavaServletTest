@@ -8,8 +8,6 @@ import java.io.InputStream;
 import java.text.MessageFormat;
 import java.util.Properties;
 
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -24,7 +22,12 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class ServletTest05 extends HttpServlet {
 
-    public void doGet(HttpServletRequest request, HttpServletResponse response)
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException { 
         /**
          * response.setContentType("text/html;charset=UTF-8");目的是控制浏览器用UTF-8进行解码；
