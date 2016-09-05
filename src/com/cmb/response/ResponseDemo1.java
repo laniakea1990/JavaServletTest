@@ -32,7 +32,7 @@ public class ResponseDemo1 extends HttpServlet {
     }
     
    
-    public void outputChineseByOutputStream(HttpServletResponse response) throws IOException{
+    public void outPutChineseByOutputStream(HttpServletResponse response) throws IOException{
         /**使用OutputStream输出中文注意问题：
          * 在服务器端，数据是以哪个码表输出的，那么就要控制客户端浏览器以相应的码表打开，
          * 比如：outputStream.write("中国".getBytes("UTF-8"));//使用OutputStream流向客户端浏览器输出中文，以UTF-8的编码进行输出
